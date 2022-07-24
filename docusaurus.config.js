@@ -117,7 +117,7 @@ const config = {
               },
               {
                 label: 'Licenses',
-                href: '',
+                href: 'https://github.com/CarbonScript',
               },
             ],
           },
