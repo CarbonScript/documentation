@@ -1,41 +1,16 @@
-# Website
+# Carbon Script Documentation Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This is a documentation website project for the Carbon Script language. The purpose of this project is not only the front-end design of the document website, but also the specific content of the document.
+The Documentation website provides learning materials, guidance, and instructions for Carbon Script.
 
-### Installation
+## Contributing
 
-```
-$ yarn
-```
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Local Development
+The current task is to design the language proposal for Carbon Script.
 
-```
-$ yarn start
-```
+Therefore, we welcome any ideas, discussions and proposals for the design of the Carbon Script language.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## License
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This project uses the MIT license.
