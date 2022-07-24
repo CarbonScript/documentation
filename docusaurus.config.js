@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CarbonScript',
+  tagline: 'CarbonScript is C#-like, javascript-base compiled script programming language.',
   url: 'https://carbonscript.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -58,9 +58,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'CarbonScript',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'CarbonScript Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -72,7 +72,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CarbonScript',
             label: 'GitHub',
             position: 'right',
           },
@@ -94,16 +94,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github Wiki',
+                href: 'https://github.com/CarbonScript/docs-carbonscript/wiki',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'QQ Group',
+                href: 'https://jq.qq.com/?_wv=1027&k=vFMQ0z6k',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/prinOrange_',
               },
             ],
           },
@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/CarbonScript',
               },
             ],
           },
