@@ -7,10 +7,12 @@ Carbon Script has these basic data types:
 + Boolean Type,indicate false or true : `boolean`
 + String, consist of char sequence : `string`
 + Number, include integer and double number in 8 bytes : `number`
-  
-Composed by basic data types:
 
-+ Array : A sequence container in same data type.
-+ Tuple : A sequence container might not in same data type.
-+ Dictionary: Composed.
+There are two special data types: `any` and `void`
 
++ `any` can indicate any type such as Number, Boolean, and String.
++ `void` expresses: "Not any type", it is often used in the function return type, and it is used to express this function without returning any value.
+
+According to the basic types of array storage, the array can be divided into types.
+
+For example, the type `number[]` says the array that stores `number` type

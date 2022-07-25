@@ -22,10 +22,10 @@ print_number (num:number):void{
 }
 ```
 
-Also, function has none parameter list, the parameter list should be `void`.
+Also, function has none parameter list, the parameter list should be empty.
 
 ```
-print_menu (void):void{
+print_menu ():void{
     # function body
 }
 ```

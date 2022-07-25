@@ -59,9 +59,107 @@ Arrays has its type, which is the type provided at declaration time. It can only
 
 A dictionary is a non-type storage structure. That is to say, data of different types can be stored in the same dictionary. Unlike arrays, dictionaries store a set of key-value pairs. where the keys are of type string and the values can be of any type. Keys cannot appear repeatedly in the same dictionary.
 
+
+
 ## Mixed Usage and higher-Order structure
+
+State a empty dictionary to use the following ways:
+
+```
+set <dictionary name>{} ;
+```
+For example:
+
+```
+set data{};
+```
+
+If you need to bring your initial value, you can use the following ways:
+
+```
+set <dictionary name> {} = {
+    <key1>:<datatype> = <value1>,
+    <key2>:<datatype> = <value2>,
+    <key3>:<datatype> = <value3>,
+    ......
+};
+```
+
+For example,
+
+```
+set student_info {} = {
+    "name":string = "Bob",
+    "age":number = 20,
+    "sex":boolean = true,
+};
+```
+
+In this way, we declared a dictionary with initial value.
+
+If you need to access the dictionary element, the method is basically the same as that of the array elements. The difference is that the index is a string of the key name.
+
+```
+<dictionary name>[<key>];
+```
+
+For the above example, get age from dictionary.
+
+```
+print(student_info["age"]);
+```
+
+Similar to the array, when accessing the corresponding value of an unwanted key, a warning will be proposed during the compilation period, and `null` will be returned at runtime, and error will never be reported.
+
 
 ## Iterable and Traverse
 
-## Functions
+Arrays and dictionaries are all iterable. That is able to be traveled by `foreach` block.
 
+Generally speaking, arrays can traverse through indexes.
+
+```
+for (set i : number = 0; i < len(arr); i++){
+    print(numToStr(arr[i]));
+}
+```
+
+Of course, you can also traverse array with `foreach`.
+
+```
+foreach (item in arr){
+    print(numToStr(item));
+}
+```
+
+Item is the element of the corresponding arr per traversal.
+
+The effects of the two traversal ways are same. The output order of the traversal is sorted according to the array indexes.
+
+But for dictionaries, because the key value of the dictionary will not be sorted, the dictionary can only be traversed with `foreach`.
+
+And, in the traversal results, the output order of each item is **uncertain**
+
+```
+foreach (item in arr){
+    print(toString(item));
+}
+```
+
+The item output order in dictionary is uncertain.
+
+However, there is also a way to sort the dictionary before the output dictionary results with function `sortDictionary`. In this way, the output result is arranged in each of which is arranged in the key name of the key name.
+
+## Some Functions
+
+In order to facilitate the use and management of array and dictionary, Carbon Script provides some commonly used built -in functions.
+
+### arrCount(arr:array):void
+
+### dicCount(dic:dictionary):void
+
+### sortDictionary(dic:dictionary):void
+
+### arrClean(arr:any[]):void
+
+### dicClean(dic:):void
