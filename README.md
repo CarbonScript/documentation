@@ -3,6 +3,8 @@
 This is a documentation website project for the Carbon Script language. The purpose of this project is not only the front-end design of the document website, but also the specific content of the document.
 The Documentation website provides learning materials, guidance, and instructions for Carbon Script.
 
+If you need released documentation, please [click here](https://carbonscript.github.io)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
