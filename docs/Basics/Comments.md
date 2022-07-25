@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 In order to avoid possible compilation problems, and to simplify the compilation process and improve the aesthetics and readability of the code, Carbon Script only support single-line comment.
 Within a line, everything after the comment symbol will be ignored by the compiler.will not be compiled, interpreted or executed.
 

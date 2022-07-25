@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 
 Carbon Script has these basic data types:
 
