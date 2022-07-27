@@ -13,6 +13,6 @@ There are two special data types: `any` and `void`
 + `any` can indicate any type such as Number, Boolean, and String.
 + `void` expresses: "Not any type", it is often used in the function return type, and it is used to express this function without returning any value.
 
-According to the basic types of array storage, the array can be divided into types.
+According to the basic types of array storage, the array can be divided into some types.
 
-For example, the type `number[]` says the array that stores `number` type
+For example, the type `number[]` says the array that stores `number` type.

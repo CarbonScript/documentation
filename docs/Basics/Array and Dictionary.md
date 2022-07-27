@@ -154,12 +154,12 @@ However, there is also a way to sort the dictionary before the output dictionary
 
 In order to facilitate the use and management of array and dictionary, Carbon Script provides some commonly used built -in functions.
 
-### arrCount(arr:array):void
+### arrCount(arr:any[]):void
 
-### dicCount(dic:dictionary):void
+### dicCount(dic:{}):void
 
 ### sortDictionary(dic:dictionary):void
 
 ### arrClean(arr:any[]):void
 
-### dicClean(dic:):void
+### dicClean(dic:{}):void

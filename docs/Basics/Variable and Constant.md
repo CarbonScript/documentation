@@ -6,7 +6,9 @@ sidebar_position: 1
 
 If you want to declare multiple variables at once, you can only declare multiple variables of the same data type, and it is not supported to declare variables of multiple mixed types at once.
 
-Variables can be declared using the keyword set. This is a keyword dedicated to declaring variables.
+For the naming of variables, only English letters or underscores can be used as the beginning, and keywords cannot be used.
+
+Variables can be declared using the keyword `set`. This is a keyword dedicated to declaring variables.
 
 ### Declaration of single variable 
 
@@ -78,6 +80,8 @@ So the `a3`,`a4` will be assigned `null`.
 
 In contrast to variables, constants cannot be modified after they are declared. Also, constants must be assigned an initial value when they are declared, not null.
 All constants must be determined at compile time or before compilation. An error occurs if the constant is found to be modified at runtime.
+
+The naming convention for constants is the same as for variables.
 
 Constants can be declared using `set const`,very similar to the declaration of a variable. The only difference is that an initial value must be assigned.
 
