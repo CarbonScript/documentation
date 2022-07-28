@@ -1,5 +1,6 @@
 {
   "name": "docs-carbonscript",
+  "description": "The carbonscript documentation website.",
   "version": "0.0.0",
   "private": true,
   "scripts": {
