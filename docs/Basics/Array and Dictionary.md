@@ -22,7 +22,7 @@ set <array name>[] : <datatype>;
 Example
 
 ```
-set arr[] : number;
+set arr[] : number[];
 ```
 
 Array declared like this contains no elements.
@@ -35,7 +35,7 @@ set <array name>[] : <datatype> = [elem1,elem2,elem3,elem4,....];
 
 Example:
 ```
-set arr[] : number = [19,25,7,14];
+set arr[] : number[] = [19,25,7,14];
 ```
 
 An array declared this way has a length equal to the number of initial elements. Like the above example, the length of the array is 4
