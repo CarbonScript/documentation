@@ -39,7 +39,7 @@ main(void):number {
 }
 ```
 
-In the second case, you can use the die() function to exit the program.
+In the second case, you can use the `die` function to exit the program.
 
 ```
 
@@ -51,4 +51,11 @@ main(void):number {
   some_func();
   return 0;
 }
+```
+
+The `die` function's parameter could be null or a number to indicate exit status
+
+For example, this will be exit with -1:
+```
+die(-1);
 ```
