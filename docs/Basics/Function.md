@@ -40,7 +40,7 @@ Functions can be called by their name and passed in parameters.
 
 For example,
 ```
-sum(a:number,b:number):number{
+sum(a:number, b:number):number{
     return a + b;
 }
 
@@ -73,11 +73,11 @@ If there are multiple functions with the same name, but they all have different 
 For example, we define a function called `sum`, For the sum of two strings, the value is the concatenation of the two strings. Arithmetic sum if it is the sum of two numbers.
 
 ```
-sum(str1:string, str2:string){
+sum(str1:string, str2:string):string{
     return str1.contact(str2);
 }
 
-sum(num1:number, num2:number){
+sum(num1:number, num2:number):number{
     return num1 + num2;
 }
 

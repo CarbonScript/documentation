@@ -12,8 +12,49 @@ There is special data types:  `void`
 
 `void` expresses: "Not any type", it is often used in the function return type, and it is used to express this function without returning any value. But it cannot be used to declare variable's data type.
 
-According to the basic types of array storage, the array can be divided into some types.
 
-Add square brackets after the data type, represents an array type, and the elements stored in this array are the corresponding data type.
+## Type Convert
 
-For example, the type `number[]` says the array that stores `number` type.
+The conversion of data types is divided into explicit conversion and implicit conversion. Explicit conversions are performed with the help of functions and return values, while implicit conversions are not required. Note: Implicit conversions can only occur between underlying data types.
+
+The specific implicit conversion rules are as follows:
+
++ boolean <-> string
+
+    ```
+    false   <->  'false'
+    true    <->  'true'
+    ```
+
++ number -> boolean
+    ```
+    Positive number             ->  true
+    zero and negative numbers   -> false
+    ```
++ boolean -> number
+    ```
+    true    ->  1
+    false   ->  0
+    ```
+
++ string <-> number
+
+    Strings in legal numeric form can be directly converted to numbers
+    Likewise, numbers can also be converted to corresponding strings.
+
+    But note that if the string is not a legal digital form, such as English letters, Chinese, etc., it will be converted to the number 0
+
+    For example,
+    ```
+    'abc0123456'    ->  0
+    ```
+
+    Also note that when strings are converted to numbers, precision may be lost. Also, if the number represented by the string exceeds the range of a 64-bit floating point number, the converted number will become NaN
+
+    For example,
+    ```
+    # lost precision
+    '0.123456789123456789123456789' -> 0.12345678912345678
+    # Out of range
+    '9999999999999999999999999'     -> NaN
+    ```

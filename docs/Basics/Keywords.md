@@ -34,3 +34,4 @@ Keyword is an identifier in a language used to generate a syntax tree. So keywor
 + constructor
 + this
 + debugger
++ instanceof
