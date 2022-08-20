@@ -14,7 +14,11 @@ There is special data types:  `void`
 
 ## NaN
 
-NaN is of type number. It means "illegal number", and the result of arithmetic operation of any number and NaN is equal to NaN
+`NaN` is of type number. It means "illegal number", and the result of arithmetic operation of any number and NaN equals to `NaN`
+
+## null
+
+`null` does not belong to any of the above types, nor does it belong to an instance of any object. it means `empty value`.
 
 ## Type Convert
 
@@ -60,4 +64,25 @@ The specific implicit conversion rules are as follows:
     '0.123456789123456789123456789' -> 0.12345678912345678
     # Out of range
     '9999999999999999999999999'     -> NaN
+    ```
+
++ null -> string
+  
+    When null is implicitly converted to a string, an empty string is returned.
+    ```
+    null    ->  ''
+    ```
+
++ null  -> number
+
+    When null is converted to a number, NaN is returned
+    ```
+    null    ->  NaN
+    ```
+
++ null  -> boolean
+
+    When null is converted to a boolean value, it is always return to false
+    ```
+    null    ->  false
     ```
