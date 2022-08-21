@@ -24,13 +24,50 @@ Relational operators express the relationship between iterable containers and el
 
 It's just a syntactic sugar for the container's built-in functions, you can also use built-in functions instead
 
-## Condition Operator
+### `in`
 
-The conditional operator is the ternary operator. It is an expression template that returns the corresponding content according to the boolean value returned by the condition
+`in` used to judge whether the element is in the container. it returns a boolean as result.
+
+```
+set arr[] : number = [1,2,3,4,5];
+print(5 in arr);    # true
+```
+
+### `not in`
+
+`not in` is the inverse operation of in, if the element is not in the specified container, it will return true
+
+```
+set arr[] : number = [1,2,3,4,5];
+print(6 not in arr);    # true
+```
+
+## Conditional Operator
+
+The conditional operator is the ternary operator. It is an expression template that returns the corresponding content according to the boolean value returned by the condition.
+
+```
+(<boolean expression>) ? <true-case value> : <false-case value>;
+```
+For example,
+
+```
+print(((1 > 2) ? 'Yes' : 'No'))   # 'No'
+```
 
 ## String Operator
 
 String operators are also syntactic sugar for string functions.
+
+### concat operator `+`
+
+This operator is often used for string concatenation. When the left and right sides of this operator are strings, the concatenation operation is performed. If one side is not a string, it will be implicitly converted before concatenation.
+
+```
+set str1, str2, str3:string = 'abc', 'def';
+print(str1 + str2); # 'abcdef'
+print(str2 + str3); # 'abc', The str3 is null, was implicit convert to empty string
+```
 
 ## Parentheses and operator precedence
 
