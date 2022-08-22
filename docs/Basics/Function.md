@@ -74,7 +74,7 @@ For example, we define a function called `sum`, For the sum of two strings, the 
 
 ```
 sum(str1:string, str2:string):string{
-    return str1.contact(str2);
+    return str1.concat(str2);
 }
 
 sum(num1:number, num2:number):number{

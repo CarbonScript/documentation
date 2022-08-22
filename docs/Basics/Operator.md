@@ -14,9 +14,27 @@ Logical operator expression has usages for calculating Boolean data.
 
 Compares its operands and returns a logical value based on whether the expression is true. Operands can be numbers, strings, booleans, object values.
 
++ `>`: Bigger than something
++ `<`: Smaller than something
++ `>=`: Bigger than or equal to something
++ `<=`: Smaller than or equal to something
+
+It returns a boolean value to indicate whether the relationship holds. Comparison operators apply to two numbers. If both sides are strings, it will compare their dictionary permutations.
+
+```
+5 > 9           # false
+'abc' < 'bbc'   # true
+```
+
 ## Assignment Operator
 
-Assignment operator `=` are used to assign a value to a variable or object reference.
+Assignment operator `=` are used to assign a value to a variable or object reference. It can assign a value to a variable or object
+
+For example,
+
+```
+set age:number = 18;
+```
 
 ## Relational Operators
 
@@ -68,6 +86,8 @@ set str1, str2, str3:string = 'abc', 'def';
 print(str1 + str2); # 'abcdef'
 print(str2 + str3); # 'abc', The str3 is null, was implicit convert to empty string
 ```
+
+### Permutation Compare Operator `>`, `<`, `>=`, `<=`
 
 ## Parentheses and operator precedence
 
